@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/global-style.css">
+	<link rel="stylesheet" href="styles/left-column-style.css">
+	<link rel="stylesheet" href="styles/signup-form-style.css">
+	<link rel="stylesheet" href="styles/bottom-content-style.css">
+	<link rel="stylesheet" href="styles/thank-you-page-style.css">
+	<title>Test</title>
+</head>
+
+<body>
+<div class="sing-up-content">
+	<div class="sing-up-column">
+		<p class="sign-up-word">Sign up</p>
+	</div>
+	<div class="sign-up-form" id="sign-up-form">
+		<div id="sign-up">
+			<h1>New user?</h1>
+			<p>Use the form below to create your account.</p>
+			<div class="line">
+				<div class="left-item">
+					<label for="first-name">First Name</label>
+					<input
+						id="first-name"
+						name="field"
+						pattern="[A-Za-z]{2,}"
+						required
+						placeholder="Alice"
+					>
+				</div>
+				<div class="right-item">
+					<label for="last-name">Last Name</label>
+					<input
+						id="last-name"
+						name="field"
+						pattern="[A-Za-z]{2,}"
+						required
+						placeholder="Miller"
+					>
+				</div>
+			</div>
+			<div class="line">
+				<div class="left-item">
+					<label for="nationality">Nationality</label>
+					<select id="nationality" name="field">
+						<option value="American">American</option>
+						<option value="Russian">Russian</option>
+						<option value="French">French</option>
+						<option value="Belarus">Belarus</option>
+					</select>
+				</div>
+				<div class="right-item">
+					<label for="email">Email</label>
+					<div>
+						<input id="email"
+									 name="field"
+									 class="email-input"
+									 type="email"
+									 required
+						>
+						<svg class="checkmark"
+								 width="11"
+								 height="8"
+								 viewBox="0 0 11 11"
+								 fill="none"
+								 xmlns="http://www.w3.org/2000/svg"
+						>
+							<path d="M1 5.2L4.47826 10L11 1"
+										stroke-linecap="round"/>
+						</svg>
+					</div>
+				</div>
+			</div>
+			<div class="line">
+				<div class="left-item">
+					<label>Date of Birth</label>
+					<div>
+						<select name="field" id="day-of-birth">
+							<option value="0">1</option>
+							<option value="1">2</option>
+							<option value="2">3</option>
+							<option value="3">4</option>
+							<option value="4">5</option>
+						</select>
+						<select name="field" id="month-of-birth">
+							<option value="11">December</option>
+							<option value="0">January</option>
+							<option value="1">February</option>
+							<option value="1">March</option>
+						</select>
+						<select name="field" id="year-of-birth">
+							<option value="1985">1985</option>
+							<option value="1990">1990</option>
+							<option value="1995">1995</option>
+							<option value="2000">2000</option>
+						</select>
+					</div>
+				</div>
+				<div class="right-item">
+					<p>Gender</p>
+					<div class="gender">
+						<label><input type="radio" id="male" name="field">Male</label>
+						<label><input type="radio" id="female" name="field">Female</label>
+					</div>
+				</div>
+			</div>
+			<div class="line">
+				<div class="left-item">
+					<label for="password">Password</label>
+					<input id="password"
+								 name="field"
+								 pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+								 required
+								 type="password"
+
+					>
+				</div>
+				<div class="right-item">
+					<label for="confirm-password">Confirm Password</label>
+					<input id="confirm-password"
+								 name="field"
+								 pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+								 required
+								 type="password"
+					>
+				</div>
+			</div>
+		</div>
+		<div class="page-bottom">
+			<p class="login-link">Have an account? <a href="">Login</a></p>
+			<button class="complete-btn" id="complete-btn">Complete Signup</button>
+		</div>
+	</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

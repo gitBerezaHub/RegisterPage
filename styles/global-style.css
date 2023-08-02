@@ -1,0 +1,13 @@
+:root {
+	--color-input: #7C7C7C;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	border: none
+}
+
+.sing-up-content {
+	display: flex;
+}

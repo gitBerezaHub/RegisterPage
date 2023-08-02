@@ -1,0 +1,19 @@
+.sing-up-column {
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+	height: 100vh;
+	width: 20vw;
+	background: #5A61ED;
+}
+
+.sign-up-word {
+	margin: 0;
+	padding-left: 10px;
+	padding-top: 25px;
+	font-size: 49px;
+	transform: rotate(180deg);
+	writing-mode: vertical-rl;
+	color: #fff;
+	font-family: PT Sans, serif;
+}

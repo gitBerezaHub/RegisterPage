@@ -1,0 +1,102 @@
+.sign-up-form {
+	display: flex;
+	margin: 39px 25px;
+	width: 80vw;
+	flex-direction: column;
+}
+
+.sign-up-form h1 {
+	margin: 0;
+	font-size: 22px;
+}
+
+
+.sign-up-form * {
+	font-family: WorkSans, sans-serif;
+}
+
+.line {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 10px;
+	animation: expand 3s;
+}
+
+@keyframes expand {
+	0% {
+		margin-top: -50px;
+		opacity: 0;
+	}
+
+	100% {
+		margin-top: 10px;
+		opacity: 1;
+	}
+}
+
+.line p, label {
+	margin: 0 0 8px;
+}
+
+.left-item,
+.right-item {
+	width: 48%;
+	border-bottom: 1px solid #F2F2F2;
+	color: var(--color-input);
+	font-size: 12px;
+	display: flex;
+	flex-direction: column;
+}
+
+#day-of-birth {
+	width: 20%;
+}
+
+#month-of-birth {
+	width: 40%;
+}
+
+#year-of-birth {
+	width: 36%;
+}
+
+.gender {
+	display: flex;
+	font-size: 14px;
+}
+
+input {
+	font-size: 14px;
+	background: none;
+	border: none;
+	outline: 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+input:invalid {
+	color: red;
+}
+
+.checkmark {
+	stroke-width: 2;
+}
+
+.email-input:valid + .checkmark {
+	stroke: #5A61ED;
+}
+
+.email-input:invalid + .checkmark {
+	stroke: white;
+}
+
+
+select {
+	width: 100%;
+	font-size: 14px;
+	background: none;
+	outline: none;
+	border: none;
+}
